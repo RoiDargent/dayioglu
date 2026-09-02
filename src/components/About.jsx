@@ -30,7 +30,7 @@ export default function About() {
             Dayıoğlu İnşaat olarak kurumsal kimliğimizle 13 yıldır, ailemizin
             inşaat sektöründeki birikimiyle ise 30 yılı aşkın süredir bu
             şehre yapılar kazandırıyoruz. Bugüne kadar 20'nin üzerinde
-            binada, 300'e yakın aileye anahtar teslim ev sahibi olma
+            binada, 700'e yakın aileye anahtar teslim ev sahibi olma
             mutluluğunu yaşattık.
           </p>
 
