@@ -1,0 +1,16 @@
+/* 1. Önce Google Fonts (Her şeyden önce gelmeli) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;700;900&family=Oswald:wght@400;600;700&display=swap');
+
+/* 2. Sonra Tailwind'in çekirdeği */
+@import "tailwindcss";
+
+/* 3. Fontları Tailwind'e tanıtma */
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-oswald: "Oswald", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+/* Kaydırma animasyonu için eklendi */
+html {
+  scroll-behavior: smooth;
+}
