@@ -17,7 +17,7 @@ export default function Home() {
 
         <div className="relative z-10 mt-40">
           <h1 className="text-5xl md:text-7xl font-bold font-montserrat text-white mb-6 drop-shadow-lg tracking-tight">
-            Geleceği İnşa Ediyoruz
+            Geleceğinizi İnşa Ediyoruz
           </h1>
           
           <p className="text-xl max-w-2xl font-inter text-gray-200 mx-auto drop-shadow-md">
