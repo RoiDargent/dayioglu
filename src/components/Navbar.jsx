@@ -9,7 +9,7 @@ export default function Navbar() {
         
         {/* Logoya tıklayınca da en üste kaysın diye href="#baslangic" yapıldı */}
         <a href="#baslangic" className="text-xl font-black font-montserrat tracking-widest drop-shadow-md">
-          DAYIOĞLU İNŞAAT
+          DAYIaOĞLU İNŞAAT
         </a>
         
         {/* Masaüstü Menü (Mobilde gizlenir - md:flex) */}
