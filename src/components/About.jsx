@@ -27,7 +27,7 @@ export default function About() {
           </h2>
 
           <p className="mt-6 text-lg font-inter text-gray-600 leading-relaxed max-w-xl">
-            Dayıoğlu İnşaat olarak kurumsal kimliğimizle 13 yıldır, ailemizin
+            Dayıoğlu İnşaat olarak kurumsal kimliğimizle 15 yıldır, ailemizin
             inşaat sektöründeki birikimiyle ise 30 yılı aşkın süredir bu
             şehre yapılar kazandırıyoruz. Bugüne kadar 20'nin üzerinde
             binada, 700'e yakın aileye anahtar teslim ev sahibi olma
