@@ -30,7 +30,7 @@ export default function About() {
             Dayıoğlu İnşaat olarak kurumsal kimliğimizle 15 yıldır, ailemizin
             inşaat sektöründeki birikimiyle ise 30 yılı aşkın süredir bu
             şehre yapılar kazandırıyoruz. Bugüne kadar 20'nin üzerinde
-            binada, 700'e yakın aileye anahtar teslim ev sahibi olma
+            binada, 70'e yakın aileye anahtar teslim ev sahibi olma
             mutluluğunu yaşattık.
           </p>
 
@@ -40,7 +40,7 @@ export default function About() {
               { value: '30+', label: 'Yıl Sektör Tecrübesi' },
               { value: '13', label: 'Yıl Kendi Markamızla' },
               { value: '20+', label: 'Tamamlanan Bina' },
-              { value: '300', label: "'e Yakın Teslim Edilen Daire" },
+              { value: '700', label: "'e Yakın Teslim Edilen Daire" },
             ].map((stat) => (
               // Tüm kenarlık (border) ve özel boşluk sınıflarını kaldırdık
               <div key={stat.label}>
