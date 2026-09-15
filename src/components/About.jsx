@@ -3,18 +3,31 @@ export default function About() {
     <section
       id="hakkimizda"
       className="relative min-h-screen flex items-center bg-white text-gray-900 overflow-hidden"
-      style={{
-        backgroundImage:
-          // Gradient geçişi %55'te (resmin bittiği yerde) tam beyaz olacak şekilde ayarlandı
-          "linear-gradient(to right, transparent 20%, rgba(255, 255, 255, 0.9) 45%, #fff 55%), url('/images/dayioglu-about.jpeg')",
-        backgroundSize: 'cover, 55% 100%',
-        backgroundPosition: 'center, left center',
-        backgroundRepeat: 'no-repeat',
-      }}
     >
-      <div className="max-w-7xl w-full mx-auto px-8 py-12 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      {/* 
+        ARKAPLAN RESMİ KATMANI
+        Sadece mobilde gizlenir (hidden), orta ve büyük ekranlarda (md:block) görünür. 
+      */}
+      <div
+        className="absolute inset-0 hidden md:block"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, transparent 20%, rgba(255, 255, 255, 0.9) 45%, #fff 55%), url('/images/dayioglu-about.jpeg')",
+          backgroundSize: 'cover, 55% 100%',
+          backgroundPosition: 'center, left center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      />
+
+      {/* İÇERİK ALANI */}
+      <div className="relative z-10 max-w-7xl w-full mx-auto px-8 py-12 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         
-        <div className="relative z-10 md:col-start-2">
+        {/* 
+          YAZILAR 
+          Mobilde: Ortalanmış (flex-col, items-center, text-center)
+          Masaüstünde: Sola dayalı (md:items-start, md:text-left) ve sağ tarafta (md:col-start-2)
+        */}
+        <div className="flex flex-col items-center text-center md:items-start md:text-left md:col-start-2">
           <span className="uppercase tracking-[0.3em] text-orange-400 font-inter text-sm font-semibold">
             Biz Kimiz
           </span>
@@ -35,19 +48,18 @@ export default function About() {
           </p>
 
           {/* Rakamlar */}
-          <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-y-8 gap-x-4">
+          <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-y-8 gap-x-4 w-full">
             {[
               { value: '30+', label: 'Yıl Sektör Tecrübesi' },
               { value: '13', label: 'Yıl Kendi Markamızla' },
               { value: '20+', label: 'Tamamlanan Bina' },
               { value: '700', label: "'e Yakın Teslim Edilen Daire" },
             ].map((stat) => (
-              // Tüm kenarlık (border) ve özel boşluk sınıflarını kaldırdık
               <div key={stat.label}>
                 <div className="font-oswald text-4xl font-bold text-gray-900">
                   {stat.value}
                 </div>
-                <div className="mt-1 text-xs uppercase tracking-wider text-gray-500 font-inter">
+                <div className="mt-1 text-xs uppercase tracking-wider text-gray-500 font-inter mx-auto">
                   {stat.label}
                 </div>
               </div>
