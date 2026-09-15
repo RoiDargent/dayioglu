@@ -42,8 +42,8 @@ export default function About() {
           <p className="mt-6 text-lg font-inter text-gray-600 leading-relaxed max-w-xl">
             Dayıoğlu İnşaat olarak kurumsal kimliğimizle 15 yıldır, ailemizin
             inşaat sektöründeki birikimiyle ise 30 yılı aşkın süredir bu
-            şehre yapılar kazandırıyoruz. Bugüne kadar 20'nin üzerinde
-            binada, 700'e yakın aileye anahtar teslim ev sahibi olma
+            şehre yapılar kazandırıyoruz. Bugüne kadar 40'ın üzerinde
+            binada, 950'e yakın aileye anahtar teslim ev sahibi olma
             mutluluğunu yaşattık.
           </p>
 
@@ -51,9 +51,9 @@ export default function About() {
           <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-y-8 gap-x-4 w-full">
             {[
               { value: '30+', label: 'Yıl Sektör Tecrübesi' },
-              { value: '13', label: 'Yıl Kendi Markamızla' },
-              { value: '20+', label: 'Tamamlanan Bina' },
-              { value: '700', label: "'e Yakın Teslim Edilen Daire" },
+              { value: '15', label: 'Yıl Kendi Markamızla' },
+              { value: '40+', label: 'Tamamlanan Bina' },
+              { value: '950', label: "'ye Yakın Teslim Edilen Daire" },
             ].map((stat) => (
               <div key={stat.label}>
                 <div className="font-oswald text-4xl font-bold text-gray-900">
