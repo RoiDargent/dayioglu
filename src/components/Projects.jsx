@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Projects() {
   const projects = [
@@ -9,9 +10,8 @@ export default function Projects() {
       details: '3+1, 130 Metrekare Net',
       status: "Projenin %90'ı Bitti",
       image: '/images/proje-kisla.jpeg',
-      // Kışla projesine video yolunu ekledik.
-      // Video yüklenene kadar veya mobilde çalışmazsa diye image kısmını da poster olarak tutuyoruz.
-      video: '/videos/proje-kisla.mp4' 
+      video: '/videos/proje-kisla.mp4',
+      link: '/sahintowers' // 1. YENİ EKLENEN SATIR
     },
     {
       id: 2,
@@ -19,7 +19,8 @@ export default function Projects() {
       location: 'İlkadım, Tepecik Mah.',
       details: '2+1, 110 Metrekare Net',
       status: "Projenin %60'ı Bitti",
-      image: '/images/proje-tepecik.jpeg'
+      image: '/images/proje-tepecik.jpeg',
+      link: '/tepecik' // 1. YENİ EKLENEN SATIR
     },
     {
       id: 3,
@@ -28,7 +29,8 @@ export default function Projects() {
       details: '2+1, 110 Metrekare Net',
       status: 'Proje Tamamlandı, Taşınılmaya Hazır',
       image: '/images/proje-beypinar.jpeg',
-      isVertical: true
+      isVertical: true,
+      link: '/beypinar' // 1. YENİ EKLENEN SATIR
     }
   ];
 
@@ -69,29 +71,23 @@ export default function Projects() {
               <source src={proje.video} type="video/mp4" />
             </video>
           ) : proje.isVertical ? (
-            // Dikey resimler için güncellenmiş sinematik efekt (Siyahlıklar kaldırıldı)
             <div className="absolute inset-0 w-full h-full overflow-hidden">
-              {/* Arka plandaki bulanık resim (opacity kaldırıldı, tam parlaklık) */}
               <div 
                 className="absolute inset-0 bg-cover bg-center blur-2xl scale-110"
                 style={{ backgroundImage: `url(${proje.image})` }}
               ></div>
-              
-              {/* Ortalanmış net resim */}
               <div 
                 className="absolute inset-0 bg-contain bg-center bg-no-repeat"
                 style={{ backgroundImage: `url(${proje.image})` }}
               ></div>
             </div>
           ) : (
-            // Yatay resimler
             <div 
               className="absolute inset-0 bg-cover bg-center"
               style={{ backgroundImage: `url(${proje.image})` }}
             ></div>
           )}
           
-          {/* Tüm slaytlar için geçerli olan tek karartma katmanı (yazıların okunması için) */}
           <div className="absolute inset-0 bg-black/60"></div>
         </div>
       ))}
@@ -120,14 +116,14 @@ export default function Projects() {
               {projects[currentIndex].status}
             </span>
           </div>
-
-          {/* BUTON KISMI BURADA GÜNCELLENDİ */}
-          <a 
-            href="#iletisim" 
+          
+          {/* 2. GÜNCELLENEN BUTON KISMI */}
+          <Link 
+            to={projects[currentIndex].link} 
             className="inline-block mt-12 px-8 py-3 bg-orange-500 hover:bg-orange-600 transition-colors rounded text-base font-bold font-inter text-white shadow-xl hover:scale-105 transform duration-300 pointer-events-auto cursor-pointer"
           >
             Daha Fazla Bilgi
-          </a>
+          </Link>
         </div>
       </div>
 
