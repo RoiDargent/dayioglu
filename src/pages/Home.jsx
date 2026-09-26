@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar';
 import Projects from '../components/Projects';
 import About from '../components/About';
+import CompletedProjects from '../components/CompletedProjects';
 import Contacts from '../components/Contacts';
 import Footer from '../components/Footer';
 
@@ -28,8 +29,7 @@ export default function Home() {
       </section>
 
       <About />
-      
-      {/* İleride projeler kısmını eklediğinde o section'a da id="projeler" verebilirsin */}
+      <CompletedProjects />
       <Projects />
       <Contacts />
       <Footer />
