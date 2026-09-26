@@ -12,7 +12,7 @@ export default function About() {
         className="absolute inset-0 hidden md:block"
         style={{
           backgroundImage:
-            "linear-gradient(to right, transparent 20%, rgba(255, 255, 255, 0.9) 45%, #fff 55%), url('/images/dayioglu-about.jpeg')",
+            "linear-gradient(to right, transparent 20%, rgba(255, 255, 255, 0.9) 45%, #fff 55%), url('/dayioglu/dayioglu-about.jpeg')",
           backgroundSize: 'cover, 55% 100%',
           backgroundPosition: 'center, left center',
           backgroundRepeat: 'no-repeat',

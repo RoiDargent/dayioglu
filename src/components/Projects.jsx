@@ -10,8 +10,8 @@ export default function Projects() {
       details: '3+1, 130 Metrekare Net',
       status: "Projenin %90'ı Bitti",
       image: '/images/proje-kisla.jpeg',
-      video: '/videos/proje-kisla.mp4',
-      link: '/sahintowers' // 1. YENİ EKLENEN SATIR
+      video: '/projects-background/proje-kisla.mp4',
+      link: '/sahintowers' 
     },
     {
       id: 2,
@@ -19,8 +19,9 @@ export default function Projects() {
       location: 'İlkadım, Tepecik Mah.',
       details: '2+1, 110 Metrekare Net',
       status: "Projenin %60'ı Bitti",
-      image: '/images/proje-tepecik.jpeg',
-      link: '/tepecik' // 1. YENİ EKLENEN SATIR
+      image: '/projects-background/proje-tepecik.jpeg',
+      isVertical: true,
+      link: '/tepecik' 
     },
     {
       id: 3,
@@ -28,9 +29,9 @@ export default function Projects() {
       location: 'Atakum, Beypınar Mah.',
       details: '2+1, 110 Metrekare Net',
       status: 'Proje Tamamlandı, Taşınılmaya Hazır',
-      image: '/images/proje-beypinar.jpeg',
+      image: '/projects-background/proje-beypinar.jpeg',
       isVertical: true,
-      link: '/beypinar' // 1. YENİ EKLENEN SATIR
+      link: '/beypinar'
     }
   ];
 

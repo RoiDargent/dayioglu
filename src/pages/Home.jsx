@@ -11,7 +11,7 @@ export default function Home() {
       {/* section etiketine id="baslangic" eklendi */}
       <section 
         id="baslangic"
-        className="relative flex flex-col items-center justify-center min-h-screen text-center px-4 bg-[url('/images/dayioglu-home-background.jpeg')] bg-cover bg-center"
+        className="relative flex flex-col items-center justify-center min-h-screen text-center px-4 bg-[url('/dayioglu/dayioglu-home-background.jpeg')] bg-cover bg-center"
       >
         <div className="absolute inset-0 bg-black/60"></div>
 
