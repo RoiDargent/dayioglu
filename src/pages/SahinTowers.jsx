@@ -20,7 +20,7 @@ export default function SahinTowers() {
     features: [
       'Otopark', '7/24 Kamera', 'Yerden Isıtma', 
       'Giyinme Odası', 'Ebeveyn Banyosu', 'Çocuk Oyun Alanı', 
-      'Isı ve Ses Yalıtımı', 'Akıllı Ev Altyapısı', 'Kamelya'
+      'Isı ve Ses Yalıtımı', 'Kamelya'
     ],
     roomSizes: [
       { name: 'Salon', size: '31.2 m²' },
@@ -52,7 +52,6 @@ export default function SahinTowers() {
       '/images/Sahin-Towers/sahin-towers-16.jpeg',
       '/images/Sahin-Towers/sahin-towers-17.jpeg',
       '/images/Sahin-Towers/sahin-towers-18.jpeg',
-      '/images/Sahin-Towers/sahin-towers-19.jpeg',
     ]
   };
 
