@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export default function Beypinar() {
   const project = {
@@ -192,7 +193,7 @@ export default function Beypinar() {
           </div>
         </div>
       </div>
-      
+      <Footer />
     </div>
   );
 }

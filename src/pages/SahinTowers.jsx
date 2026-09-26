@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export default function SahinTowers() {
   // Tam ekran gösterilecek medyanın bilgisini tutan state (null ise hiçbir şey açık değil)
@@ -266,7 +267,8 @@ export default function SahinTowers() {
           </div>
         </div>
       )}
-
+    <Footer />
     </div>
+  
   );
 }
