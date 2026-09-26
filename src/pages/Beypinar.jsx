@@ -2,6 +2,11 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export default function Beypinar() {
+
+  useEffect(() => {
+      document.title = "Beypınar Projesi | Dayıoğlu İnşaat";
+    }, []);
+
   const project = {
     title: 'Beypınar Projesi',
     location: 'Atakum, Beypınar Mah. / Samsun',

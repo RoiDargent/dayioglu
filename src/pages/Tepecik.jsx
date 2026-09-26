@@ -3,6 +3,11 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export default function Tepecik() {
+
+  useEffect(() => {
+    document.title = "Tepecik Projesi | Dayıoğlu İnşaat";
+  }, []);
+
   return (
     <div className="bg-slate-50 min-h-screen font-inter flex flex-col">
       <Navbar />

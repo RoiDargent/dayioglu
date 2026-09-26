@@ -3,7 +3,11 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export default function SahinTowers() {
-  // Tam ekran gösterilecek medyanın bilgisini tutan state (null ise hiçbir şey açık değil)
+
+useEffect(() => {
+    document.title = "Şahin Towers | Dayıoğlu İnşaat";
+  }, []);
+  
   const [fullScreenMedia, setFullScreenMedia] = useState(null);
 
   const project = {

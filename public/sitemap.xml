@@ -8,4 +8,28 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- Şahin Towers Projesi -->
+  <url>
+    <loc>https://www.dayiogluinsaat.com.tr/sahintowers</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Tepecik Projesi -->
+  <url>
+    <loc>https://www.dayiogluinsaat.com.tr/tepecik</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Beypınar Projesi -->
+  <url>
+    <loc>https://www.dayiogluinsaat.com.tr/beypinar</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
